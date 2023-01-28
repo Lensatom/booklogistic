@@ -4,9 +4,11 @@ import { Nav } from '../components'
 import { GetDeviceWidth } from '../helpers/deviceWidth'
 import more from "../assets/more.png"
 import back from "../assets/back.png"
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 const Header = () => {
+
+  const { pathname } = useLocation()
 
   const [deviceWidthDetails, setDeviceWidthDetails] = useState<any>([0, 0, 1])
   const [navPage, setNavPage] = useState(false);
@@ -33,9 +35,9 @@ const Header = () => {
           <div className='bg-[#2E3E55CC] p-5'>
             <img src={back} alt="" onClick={unRenderNavPage} />
             <div className='w-full flex flex-col mt-16 text-sm gap-5'>
-              <a href='#home' onClick={unRenderNavPage} className='text-white'> Home </a>
-              <a href='#contact' onClick={unRenderNavPage} className='text-white'> Contact Us </a>
-              <a href='#track' onClick={unRenderNavPage} className='text-white'> Track Item </a>
+              <a href={pathname !== "/" ? "/" : "#home"} onClick={unRenderNavPage} className='text-white'> Home </a>
+              <a href={pathname !== "/" ? "/#contact" : "#contact"} onClick={unRenderNavPage} className='text-white'> Contact Us </a>
+              <a href={pathname !== "/" ? "/#track" : "#track"} onClick={unRenderNavPage} className='text-white'> Track Item </a>
               <a href='' className='text-white'> Login </a>
               <a href='' className='text-white'> Register </a>
             </div>
