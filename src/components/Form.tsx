@@ -29,10 +29,10 @@ const Form = () => {
           </div>
         </div>
         <textarea placeholder="more details for pickup" className='border-[1px] border-gray-500 w-full py-2 rounded-md px-2 h-16'></textarea>
-        <NavLink to='book'>
-          <Button text="Request" className='mt-5' />
-        </NavLink>
       </div>
+      <NavLink to='book' className='px-5'>
+        <Button text="Request"/>
+      </NavLink>
     </form>
   )
 }
