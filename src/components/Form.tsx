@@ -3,29 +3,31 @@ import Button from './Button'
 
 const Form = () => {
   return (
-    <form className='flex flex-col justify-between w-full bg-white h-full rounded-md p-5'>
-      <div>
-        <label> Email </label>
-        <input  className='bg-gray-200 w-full py-1 rounded-md px-2'/>
-      </div>
-      <div>
-        <label> Pick Up Location </label>
-        <input className='bg-gray-200 w-full py-1 rounded-md px-2'/>
+    <form className='flex flex-col gap-5 bg-white lg:bg-transparent'>    
+      <div className='flex flex-col justify-between w-full bg-white h-full lg:rounded-md p-5'>
         <div>
-          <input type="checkbox" />
-          <label> provide more infomation on pickup location? </label>
+          <label> Email </label>
+          <input  className='border-[1px] border-gray-500 w-full py-1 rounded-md px-2'/>
         </div>
-      </div>
-      <textarea placeholder="more details for pickup"  className='bg-gray-200 w-full py-1 rounded-md px-2'></textarea>
-      <div>
-        <label> Enter Destination </label>
-        <input  className='bg-gray-200 w-full py-1 rounded-md px-2'/>
-        <div>
-          <input type="checkbox" />
-          <label> provide more infomation on pickup location? </label>
+        <div className='mt-3'>
+          <label> Pickup Location </label>
+          <input className='border-[1px] border-gray-500 w-full py-1 rounded-md px-2'/>
+          <div className='text-gray-500 my-1'>
+            <input type="checkbox" />
+            <label className='capitalize'> provide more infomation on pickup location </label>
+          </div>
         </div>
+        <textarea placeholder="more details for pickup"  className='border-[1px] border-gray-500 w-full py-2 rounded-md px-2 h-16'></textarea>
+        <div className='mt-3'>
+          <label> Enter Destination </label>
+          <input  className='border-[1px] border-gray-500 w-full py-1 rounded-md px-2'/>
+          <div className='text-gray-500 my-1'>
+            <input type="checkbox" />
+            <label className='capitalize'> provide more infomation on pickup location? </label>
+          </div>
+        </div>
+        <textarea placeholder="more details for pickup" className='border-[1px] border-gray-500 w-full py-2 rounded-md px-2 h-16'></textarea>
       </div>
-      <textarea placeholder="more details for pickup" className='bg-gray-200 w-full py-1 rounded-md px-2'></textarea>
       <Button text="Request" />
     </form>
   )

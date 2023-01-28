@@ -27,16 +27,17 @@ const Header = () => {
   }, [])
 
   return (
-    <div className={`w-full py-3 bg-[#2E3E55CC] opacity-${navPage == true ? 100 : 90} px-2 lg:px-10 flex justify-between items-center`}>
+    <div className={`w-full py-3 bg-white px-2 lg:px-10 flex justify-between items-center`}>
       {navPage == true ? 
         <div className='top-0 left-0 bg-black fixed w-full h-screen navdrop'>
           <div className='bg-[#2E3E55CC] p-5'>
             <img src={back} alt="" onClick={unRenderNavPage} />
-            <div className='w-full flex flex-col mt-16 text-white gap-5 text-lg font-bold'>
-              <NavLink to='/' > Contact Us </NavLink>
-              <NavLink to='/' > Track Item </NavLink>
-              <NavLink to='/' > Login </NavLink>
-              <NavLink to='/' > Register </NavLink>
+            <div className='w-full flex flex-col mt-16 text-sm gap-5'>
+              <a href='./#home' className='text-white'> Home </a>
+              <a href='./#conatct' className='text-white'> Contact Us </a>
+              <a href='./#track' className='text-white'> Track Item </a>
+              <a href='' className='text-white'> Login </a>
+              <a href='' className='text-white'> Register </a>
             </div>
           </div>
         </div> : 
