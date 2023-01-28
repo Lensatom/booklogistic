@@ -37,11 +37,11 @@ const Home = () => {
             <Button text="CHECK NOW" className="w-[70%]" />
           </NavLink>
         </div>
-        <div className="w-full lg:w-1/2 flex flex-row-reverse mt-10 lg:mt-0 lg:relative items-end h-full gap-12 lg:gap-0">
-          <div className="lg:absolute w-1/2 lg:w-[70%] bg-[#DF6E1E] top-24 capitalize left-0 p-5 rounded-md shadow-md">
-            <h2 className="text-white font-semibold text-xl"> interested in partnering with <br /> booklogistics </h2> 
-            <p className="text-white mt-5"> we are ready to assist you with your <br /> orders </p>
-            <Button text="GET IN TOUCH" className="mt-24 w-full lg:w-[40%]" />
+        <div className="w-full lg:w-1/2 px-2 flex flex-row-reverse mt-5 lg:relative items-end h-full gap-5 lg:gap-0">
+          <div className="lg:absolute w-1/2 lg:w-[70%] bg-[#DF6E1E] top-24 capitalize left-0 p-2 lg:p-5 rounded-md shadow-md">
+            <h2 className="text-white font-semibold text-md lg:text-xl"> interested in partnering with <br /> booklogistics </h2> 
+            <p className="text-white mt-5 text-xs lg:text-md"> we are ready to assist you with your <br /> orders </p>
+            <Button text="GET IN TOUCH" className="mt-2 lg:mt-24 w-full lg:w-[40%]" />
           </div>
           <img src={partner} alt="" className="w-1/2 lg:w-full" />
         </div>
@@ -61,7 +61,7 @@ const Home = () => {
             <textarea className="h-[200px] border-[1px] border-gray-500 p-3 mt-1 rounded-md text-black text-sm"></textarea>
           </div>
           <Button text="Send" className="w-[30%]" />
-          <div className="flex flex-col gap-5 w-1/2 mt-5 items-start capitalize font-normal text-sm text-gray-500">
+          <div className="flex flex-col gap-5 w-full lg:w-1/2 mt-5 items-start capitalize font-normal text-sm text-gray-500">
             <div className="h-4 flex">
               <img src={location} alt="" className="w-4" />
               <p className="ml-5"> ikeja, lagos. </p>
