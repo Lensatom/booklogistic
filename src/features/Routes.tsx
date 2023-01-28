@@ -4,8 +4,13 @@ import arrow from "../assets/arrow.png"
 import clock from "../assets/clock.png"
 import whatsAppDark from "../assets/whatsAppDark.png"
 import cancel from "../assets/cancel.png"
+import { useEffect } from 'react'
 
 const Routes = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const tracks = [
     {

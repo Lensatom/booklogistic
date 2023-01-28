@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Button } from '../components'
 
 const Book = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <form className='pt-24 w-full px-5 md:px-10 lg:px-72 flex flex-col gap-5'>
       <input className='w-full bg-gray-100 border-[1px] border-gray-300 p-2 rounded-lg' placeholder='meran road, lagos, nigeria' />

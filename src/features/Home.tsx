@@ -11,6 +11,7 @@ import lightwhatsapp from "../assets/lightwhatsapp.png"
 import lightgoogleplus from "../assets/lightgoogleplus.png"
 import lightinstagram from "../assets/lightinstagram.png"
 import partner from "../assets/partner.png"
+import { NavLink } from "react-router-dom"
 
 const Home = () => {
 
@@ -32,7 +33,9 @@ const Home = () => {
           <h4 className="font-bold"> GET UPDATE </h4>
           <h2 className="text-lg font-extrabold"> TRACK YOUR ITEM </h2>
           <hr className="my-10 bg-gray-600 h-[2px] w-[70%]"/>
-          <Button text="CHECK NOW" className="w-[70%]" />
+          <NavLink to="routes">
+            <Button text="CHECK NOW" className="w-[70%]" />
+          </NavLink>
         </div>
         <div className="w-full lg:w-1/2 flex flex-row-reverse mt-10 lg:mt-0 lg:relative items-end h-full gap-12 lg:gap-0">
           <div className="lg:absolute w-1/2 lg:w-[70%] bg-[#DF6E1E] top-24 capitalize left-0 p-5 rounded-md shadow-md">
