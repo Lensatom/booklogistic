@@ -33,9 +33,9 @@ const Header = () => {
           <div className='bg-[#2E3E55CC] p-5'>
             <img src={back} alt="" onClick={unRenderNavPage} />
             <div className='w-full flex flex-col mt-16 text-sm gap-5'>
-              <a href='./#home' className='text-white'> Home </a>
-              <a href='./#conatct' className='text-white'> Contact Us </a>
-              <a href='./#track' className='text-white'> Track Item </a>
+              <a href='#home' onClick={unRenderNavPage} className='text-white'> Home </a>
+              <a href='#contact' onClick={unRenderNavPage} className='text-white'> Contact Us </a>
+              <a href='#track' onClick={unRenderNavPage} className='text-white'> Track Item </a>
               <a href='' className='text-white'> Login </a>
               <a href='' className='text-white'> Register </a>
             </div>
