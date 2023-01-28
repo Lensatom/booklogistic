@@ -16,7 +16,7 @@ import { NavLink } from "react-router-dom"
 const Home = () => {
 
   return (
-    <div className="px-5 lg:px-10 lg:relative">
+    <div className="lg:px-10 lg:relative">
       <div id='home' className='w-full lg:h-screen backdrop lg:flex lg:flex-row lg:justify-between items-center lg:px-10'>
         <div className="h-3/4 pt-24 lg:pt-5 px-2">
           <h2 className="text-5xl lg:text-7xl text-white font-bold"> Find Your preferred logistic company </h2>
